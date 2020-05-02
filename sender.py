@@ -34,6 +34,4 @@ socket_sender.send(content)
 # Important! Do not encrypt this data!        
 socket_sender.send(b'\x00\x01\x02END\x00\x01\x02')
 
-#socket_sender.send(bytes("done"))
-
 socket_sender.close()
