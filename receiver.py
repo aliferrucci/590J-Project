@@ -12,7 +12,7 @@ if __name__ == "__main__":
         socket_connection.listen()
         client_request, r = socket_connection.accept()
 
-        os.chdir(# put path of the directory you want the files to go)
+        os.chdir("# put path of the directory you want the files to go")
 
         # naming title
         count = 1
