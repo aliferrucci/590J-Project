@@ -26,6 +26,9 @@ for file in files:
         # Close file
         f.close()
 
+        
+# TODO: Encrypt "content" here
+
 socket_sender.send(content)
 
 # Important! Do not encrypt this data!        
