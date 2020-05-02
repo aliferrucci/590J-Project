@@ -19,28 +19,16 @@ if __name__ == "__main__":
         done = False
         data = b''
         while b'\x00\x01\x02END\x00\x01\x02' not in data:
-            #f = open("file" + str(count) + ".txt", "wb")
             data += client_request.recv(1024)
-            #if data.find(b'\x00\x01END\x00\x01')
-            #while data:
-                #data += client_request.recv(1024)
-                #print(data)
-                #print("hello1")
-                #f.write(data)
-                #data += client_request.recv(1024)
-                #print(data)
 
-            #else:
-                #f.close()
-                #rint("done")
-                #data = b''
-                #count += 1
+        # Cut out the end bytes
         data = data[:len(data)-9]
+        # Split the data by file
         datalist = data.split(b'\x00\x01\x02BEGIN\x00\x01\x02')
         datalist.pop(0)
-        print(datalist)
 
         for filedata in datalist:
+            # Split apart file name and file contents
             fileFormat = filedata.split(b'\x00\x01\x02FILENAME\x00\x01\x02')
             f = open(fileFormat[0], "wb")
             f.write(fileFormat[1])
