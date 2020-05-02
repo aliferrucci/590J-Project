@@ -23,6 +23,9 @@ if __name__ == "__main__":
 
         # Cut out the end bytes
         data = data[:len(data)-9]
+        
+        # TODO: Unencrypt "data" here
+        
         # Split the data by file
         datalist = data.split(b'\x00\x01\x02BEGIN\x00\x01\x02')
         datalist.pop(0)
