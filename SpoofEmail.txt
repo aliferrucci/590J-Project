@@ -1,0 +1,25 @@
+Prerequisites: Create a SMTP2GO account at smtp2go.com
+
+1. Go to Kali Linux virtual box and open up the terminal
+2. Enter into the command line: setoolkit
+3. Once setoolkit is open there is a menu of options to choose from choose option 5. Mass Mailer Attack
+4. Then menu will give you two options: 
+	1. E-mail Attack Single Email 
+	2. E-mail Attack Mass Mailer  
+	Chose option 1
+5. Enter victims email 
+6. The menu will give you two options again:
+	1. Use a gmail Account for your email attack
+	2. Use own server or open relay 
+	Chose option 2 
+7. Create an spoofed address
+8. Create a user to appear as 
+9. Enter the Username and password for your smtp2go account
+10.Enter the SMTP email server address as mail.smtp2go.com
+11.Enter the port number for SMTP to be 2525
+12.Next flag th email as important
+13.Next it asks you to enter the path of the malicious pdf which will be some like /home/kali/.msf4/local/embeddedpdf.pdf
+14.Enter the Subject for the email
+15.Choose plain text for the file 
+16.Write the body of the email 
+17.Hit enter and the email should be in the sender email
