@@ -11,7 +11,7 @@ from cryptography.fernet import Fernet
 
 password_provided = "Covid19" # This is input in the form of a string
 password = password_provided.encode() # Convert to type bytes
-salt = b'Bwahaha'
+salt = b'Bwahahaha'
 kdf = PBKDF2HMAC(
     algorithm=hashes.SHA256(),
     length=32,
