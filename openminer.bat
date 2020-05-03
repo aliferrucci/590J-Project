@@ -1,0 +1,1 @@
+minerd -o
