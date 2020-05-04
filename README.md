@@ -31,6 +31,7 @@ In addition, we are having the victim machine mine bitcoin.  One of the goals of
 
 ## What would the team do differently next time:
 Expanding the attack to work as a generalized phishing attack.
+Make the mining software propagate like a worm.
 
 <br />
 
