@@ -29,6 +29,8 @@ Exfill communication is encrypted before sent to our C2. This means if anything 
 In addition, we are having the victim machine mine bitcoin.  One of the goals of Crypto Currency is to be anonymous and decentralized.  Even if the mining were to be discovered it points to an anonymous wallet, not a bank account or anything registered with a central authority.
 
 
+## What would the team do differently next time:
+Expanding the attack to work as a generalized phishing attack.
 
 
 ## From Start to Finish, Mapped Against the ATT&CK framework, our exploit works as follows:
