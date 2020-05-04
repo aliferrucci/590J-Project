@@ -18,8 +18,8 @@ Prerequisites: Create a SMTP2GO account at smtp2go.com
 10.Enter the SMTP email server address as mail.smtp2go.com
 11.Enter the port number for SMTP to be 2525
 12.Next flag th email as important
-13.Next it asks you to enter the path of the malicious pdf which will be some like /home/kali/.msf4/local/embeddedpdf.pdf
+13.Ask if you want to add a pdf file which would be no
 14.Enter the Subject for the email
 15.Choose plain text for the file 
-16.Write the body of the email 
+16.Write the body of the email where we will put the link to where the malicious pdf is hosted
 17.Hit enter and the email should be in the sender email
