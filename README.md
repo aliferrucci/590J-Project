@@ -33,6 +33,8 @@ In addition, we are having the victim machine mine bitcoin.  One of the goals of
 Expanding the attack to work as a generalized phishing attack.
 
 
+
+
 ## From Start to Finish, Mapped Against the ATT&CK framework, our exploit works as follows:
  
 ### Initial Access: Spearphishing Attachment (T1193)
