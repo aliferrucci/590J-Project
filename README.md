@@ -1,6 +1,6 @@
 # 590J-Project
 ## Description:
-Our attack gains access to Windows 7 systems through access to a malicious PDF.  This access is used to implant crypto mining software that will run in the background or exfiltrate encrypted data from the victim machine.
+Our attack gains access to Windows 7 systems through access to a malicious PDF.  This access is used to implant crypto mining software that will run in the background and/or exfiltrate encrypted data from the victim machine.
 
 
 ## A hypothetical use case of their project:
